@@ -284,4 +284,30 @@ header li .fa-user {
   padding: 8px 20px 8px 20px;
   border-radius: 5px;
 }
+
+/*button from loginpage*/
+.loginBtn {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  background-color: #158a49 !important;
+  padding: 8px 20px 8px 20px;
+  border-radius: 5px;
+  color: white !important;
+}
+
+/*loginform*/
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url("https://images.unsplash.com/photo-1618582948377-cd7eb0e8cb14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+  background-size: 260%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-heading {
+  font-weight: 300;
+}
 /*# sourceMappingURL=style.css.map */
