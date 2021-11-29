@@ -1,3 +1,7 @@
+main {
+  margin: 80px;
+}
+
 /*sidenav*/
 .sidebar-toggle {
   margin-left: -240px;
@@ -151,10 +155,6 @@ header li .fa-user {
   padding: 20px;
 }
 
-.mainContent {
-  left: 250px;
-}
-
 .table-container {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -271,7 +271,7 @@ header li .fa-user {
 .btnTrips {
   width: 100%;
   text-align: end;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .btnTrips a.button {
