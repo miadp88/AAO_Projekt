@@ -15,7 +15,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         </head>
     <body>
         <header>
@@ -69,8 +69,498 @@
         
 
         <main>
+          <h1>Oprettede ture</h1>
 
+          <div class="filter">
+              Filtrer <i class="fas fa-sort-down rotate" data-toggle="tooltip" title="Sorter i oprettede ture efter forskellige paramentere"></i>
+              <div class="dropdown-content">
+                  <a href="#">Odense</a>
+                  <a href="#">National</a>
+                  <a href="#">International</a>
+              </div>
+          </div>
           
+          <div class="table-container">
+          
+          
+          
+              <table>
+                  <thead>
+                      <tr>
+                          <th class="OverlineTabel"> </th>
+                          <th>Start dato</th>
+                          <th>Slut dato</th>
+                          <th>Start tid</th>
+                          <th>Varighed</th>
+                          <th>Trafik</th>
+                          <th>Afdeling</th>
+                          <th>Status</th>
+                          <th></th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="showmore">
+                          <td><input type="checkbox" id="tablecheck"></td>
+                          <td>25/06/2021</td>
+                          <td>26/06/2021</td>
+                          <td>07.00</td>
+                          <td>5 timer</td>
+                          <td>DK - DK</td>
+                          <td>Odense Blomster</td>
+                          <td>Ikke tildelt</td>
+                          <td> <a  class="more-info" href="#"><i  class="fas fa-ellipsis-v" data-toggle="tooltip" title="Flere muligheder"></i></a></td>
+                          <td>
+          
+                              <a class="showmore"> <i class="fas fa-sort-down rotate" data-toggle="tooltip" title="Se mulige chauførrer"></i> </a>
+                             
+                          </td>
+          
+                      </tr>
+                      <tr class="rowdetail">
+                          <td colspan="10">
+                              <table>
+                                  <thead class="moreshown thead-green">
+                                      <tr>
+                                          <th>Navn </th>
+                                          <th>Tlf. Nr. </th>
+                                          <th>Mail </th>
+                                          <th>Kørekort </th>
+                                          <th>Vælg chauffør </th>
+                                          <th> Godkend chauffør </th>
+          
+                                      </tr>
+                                  </thead>
+          
+                                  <tbody class="tb-green">
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr rowspan="3">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+                                              <div class="button-green-container">
+                                                  <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
+                                              </div>
+                                          </td>
+          
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+          
+          
+                      </tr>
+          
+          
+                      <tr class="showmore">
+                          <td><input type="checkbox" id="tablecheck"></td>
+                          <td>25/06/2021</td>
+                          <td>26/06/2021</td>
+                          <td>07.00</td>
+                          <td>5 timer</td>
+                          <td>DK - DK</td>
+                          <td>Odense Blomster</td>
+                          <td>Ikke tildelt</td>
+                          <td> <a class="more-info" href="#"><i class="fas fa-ellipsis-v" data-toggle="tooltip" title="Flere muligheder"></i></a></td>
+                          <td> <a class="showmore"> <i class="fas fa-sort-down rotate " data-toggle="tooltip" title="Se mulige chauførrer"></i> </a></td>
+          
+                      </tr>
+                      <tr class="rowdetail">
+                          <td colspan="10">
+                              <table>
+                                  <thead class="moreshown thead-green">
+                                      <tr>
+                                          <th>Navn </th>
+                                          <th>Tlf. Nr. </th>
+                                          <th>Mail </th>
+                                          <th>Kørekort </th>
+                                          <th>Vælg chauffør </th>
+                                          <th> Godkend chauffør </th>
+          
+                                      </tr>
+                                  </thead>
+          
+                                  <tbody>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr rowspan="3">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+                                              <div class="button-green-container">
+                                                  <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
+                                              </div>
+                                          </td>
+          
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+          
+          
+                      </tr>
+          
+          
+          
+                      <tr class="showmore">
+                          <td><input type="checkbox" id="tablecheck"></td>
+                          <td>25/06/2021</td>
+                          <td>26/06/2021</td>
+                          <td>07.00</td>
+                          <td>5 timer</td>
+                          <td>DK - DK</td>
+                          <td>Odense Blomster</td>
+                          <td>Ikke tildelt</td>
+                          <td> <a class="more-info" href="#"><i class="fas fa-ellipsis-v" data-toggle="tooltip" title="Flere muligheder"></i></a></td>
+                          <td> <a class="showmore" > <i class="fas fa-sort-down rotate" data-toggle="tooltip" title="Se mulige chauførrer"></i> </a></td>
+          
+                      </tr>
+                      <tr class="rowdetail">
+                          <td colspan="10">
+                              <table>
+                                  <thead class="moreshown thead-green">
+                                      <tr>
+                                          <th>Navn </th>
+                                          <th>Tlf. Nr. </th>
+                                          <th>Mail </th>
+                                          <th>Kørekort </th>
+                                          <th>Vælg chauffør </th>
+                                          <th> Godkend chauffør </th>
+          
+                                      </tr>
+                                  </thead>
+          
+                                  <tbody>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+          
+                                      <tr rowspan="3">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+                                              <div class="button-green-container">
+                                                  <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
+                                              </div>
+                                          </td>
+          
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+          
+          
+                      </tr>
+          
+          
+          
+                      <tr class="showmore">
+                          <td><input type="checkbox" id="tablecheck"></td>
+                          <td>25/06/2021</td>
+                          <td>26/06/2021</td>
+                          <td>07.00</td>
+                          <td>5 timer</td>
+                          <td>DK - DK</td>
+                          <td>Odense Blomster</td>
+                          <td>Ikke tildelt</td>
+                          <td><a class="more-info" href="#"><i class="fas fa-ellipsis-v" data-toggle="tooltip" title="Flere muligheder"></i></a></td>
+                          <td> <a class="showmore"> <i class="fas fa-sort-down rotate" data-toggle="tooltip" title="Se mulige chauførrer"></i> </a></td>
+          
+                      </tr>
+                      <tr class="rowdetail">
+                          <td colspan="10">
+                              <table>
+                                  <thead class="moreshown thead-green">
+                                      <tr>
+                                          <th>Navn </th>
+                                          <th>Tlf. Nr. </th>
+                                          <th>Mail </th>
+                                          <th>Kørekort </th>
+                                          <th>Vælg chauffør </th>
+                                          <th> Godkend chauffør </th>
+          
+                                      </tr>
+                                  </thead>
+          
+                                  <tbody>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr rowspan="3">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+                                              <div class="button-green-container">
+                                                  <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
+                                              </div>
+                                          </td>
+          
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+          
+          
+                      </tr>
+          
+          
+                      <tr class="showmore">
+                          <td><input type="checkbox" id="tablecheck"></td>
+                          <td>25/06/2021</td>
+                          <td>26/06/2021</td>
+                          <td>07.00</td>
+                          <td>5 timer</td>
+                          <td>DK - DK</td>
+                          <td>Odense Blomster</td>
+                          <td>Ikke tildelt</td>
+                          <td><a class="more-info" href="#"><i class="fas fa-ellipsis-v" data-toggle="tooltip" title="Flere muligheder"></i></a></td>
+                          <td> <a class="showmore"> <i class="fas fa-sort-down rotate" data-toggle="tooltip" title="Se mulige chauførrer"></i> </a></td>
+          
+                      </tr>
+                      <tr class="rowdetail">
+                          <td colspan="10">
+                              <table>
+                                  <thead class="moreshown thead-green">
+                                      <tr>
+                                          <th>Navn </th>
+                                          <th>Tlf. Nr. </th>
+                                          <th>Mail </th>
+                                          <th>Kørekort </th>
+                                          <th>Vælg chauffør </th>
+                                          <th> Godkend chauffør </th>
+          
+                                      </tr>
+                                  </thead>
+          
+                                  <tbody>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr class="moreshown">
+                                          <td>Hans</td>
+                                          <td> 37 48 38 48</td>
+                                          <td> Hans@gmail.com </td>
+                                          <td>Alle</td>
+                                          <td><input type="checkbox" id="PickDriver"></td>
+                                          <td><input type="checkbox" id="ValidateDriver"></td>
+                                      </tr>
+                                      <tr rowspan="3">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+                                              <div class="button-green-container">
+                                                  <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
+                                              </div>
+                                          </td>
+          
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+          
+          
+                      </tr>
+          
+          
+          
+                  </tbody>
+              </table>
+          </div>
           
         </main>
 
@@ -94,6 +584,22 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
+
+<script>$(' table tr td .showmore ').click(function () {
+  $(this).closest('tr.showmore').next('tr.rowdetail').toggle();
+  
+})</script>
+
+<script>$(".rotate").click(function () {
+  $(this).toggleClass("down");
+})</script>
+
+
+
+<script>$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
      
 
 </body>
