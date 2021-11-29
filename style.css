@@ -1,20 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
-body {
-  color: #5D5F63;
-  background: #293949;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0;
-  margin: 0;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
+/*sidenav*/
 .sidebar-toggle {
   margin-left: -240px;
 }
 
 .sidebar {
+  margin-top: -90px;
   width: 240px;
   height: 100%;
   background: white;
@@ -29,6 +19,16 @@ body {
 .sidebar .logo {
   width: 80%;
   margin: 20px;
+}
+
+.sidebar .sidebar, .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
 }
 
 .sidebar #leftside-navigation ul, .sidebar #leftside-navigation ul ul {
@@ -93,5 +93,59 @@ body {
   padding-top: 13px;
   padding-bottom: 13px;
   color: #aeb2b7;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+/*sidenav end*/
+/*header*/
+header {
+  background-color: #1abc9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  background-color: #1abc9c;
+}
+
+header .openbtn:hover {
+  background-color: #1abc9c;
+}
+
+header li {
+  list-style-type: none;
+  margin-top: 30px;
+  width: 100%;
+  text-align: end;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+header li .fa-user {
+  color: white;
+  padding-right: 10px;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

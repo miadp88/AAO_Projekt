@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Frontpage</title>
+        <title>Tildelte ture</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
@@ -19,8 +19,17 @@
         </head>
     <body>
         <header>
+            <div id="main" class="sub-menu">
+                <button class="openbtn" onclick="openNav()">☰</button>
+              </div>
+
+              <li class="pull-right" id="user">
+                <i class="fas fa-user"></i><a href="./replacementOverview.html"><span>Afløser oversigt</span></a>
+              </li>
+
+        </header>
         
-            <aside class="sidebar">
+            <aside class="sidebar" id="mySidebar">
                 
 
                 <div id="leftside-navigation" class="nano">
@@ -30,6 +39,7 @@
                         <a><img src="./images/AAlogo.svg" alt="Italian Trulli" class="logo">
                         </a>
                         
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
                    
                       <li class="sub-menu">
                         <a href="./newTrips.html"><i class="fas fa-edit"></i><span>Opret tur</span><i class="arrow fa fa-angle-right pull-right"></i></a>
@@ -47,20 +57,20 @@
 
                     <li class="sub-menu">
                       <a href="./assignedTrips.html"><i class="far fa-list-alt"></i><span>Tildelte ture</span><i class="arrow fa fa-angle-right pull-right"></i></a>
-                    
-                      </ul>
                     </li>
-                  </ul>
+
+                  
+                  
                 </div>
+                
               </aside>
           
            
-        </header>
+        
 
         <main>
 
-           
-
+          
           
         </main>
 
@@ -73,12 +83,26 @@
         $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
         e.stopPropagation()
       })</script>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
      
 
 </body>
   
 
 </html>
+
+
+
 
 
 
