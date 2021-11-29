@@ -11,7 +11,7 @@
   
 }
 .sidebar {
-    margin-top: -90px;
+    margin-top: -50px;
     
         .logo{
             width: 80%;
@@ -126,8 +126,9 @@
 /*header*/
 
 header{
-    background-color: #1abc9c;
+    background-color: #075243;
     display: flex;
+    height: 40px;
     .openbtn {
         font-size: 20px;
         cursor: pointer;
@@ -141,14 +142,14 @@ header{
       }
       li{
           list-style-type: none;
-          margin-top: 30px;
+          margin-top: 10px;
           width: 100%;
           text-align: end;
 
           a{
             text-decoration: none;
             color: white;
-            margin-right: 50px;
+            margin-right: 5px;
         }
         .fa-user{
             color: white;

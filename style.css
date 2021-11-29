@@ -4,7 +4,7 @@
 }
 
 .sidebar {
-  margin-top: -90px;
+  margin-top: -50px;
   width: 240px;
   height: 100%;
   background: white;
@@ -107,10 +107,11 @@
 /*sidenav end*/
 /*header*/
 header {
-  background-color: #1abc9c;
+  background-color: #075243;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 40px;
 }
 
 header .openbtn {
@@ -127,7 +128,7 @@ header .openbtn:hover {
 
 header li {
   list-style-type: none;
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%;
   text-align: end;
 }
@@ -135,7 +136,7 @@ header li {
 header li a {
   text-decoration: none;
   color: white;
-  margin-right: 50px;
+  margin-right: 5px;
 }
 
 header li .fa-user {
