@@ -6,12 +6,16 @@
 
 function openNav() {
   document.getElementById("mySidebar").style.left = "0px";
+  document.getElementById("mainContent").style.marginLeft= "260px";
+
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.left = "-240px";
-//   document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("mainContent").style.marginLeft= "0px";
+
 }
+
 
 
 $(' table tr td .showmore ').click(function () {
