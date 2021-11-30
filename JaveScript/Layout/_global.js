@@ -12,7 +12,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidebar").style.left = "-240px";
-  document.getElementById("mainContent").style.marginLeft= "0px";
+  document.getElementById("mainContent").style.marginLeft= "60px";
 
 }
 
