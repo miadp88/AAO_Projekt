@@ -8,9 +8,10 @@ main {
 }
 
 .sidebar {
-  margin-top: -50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 240px;
-  height: 105%;
   background: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -23,6 +24,11 @@ main {
 .sidebar .logo {
   width: 80%;
   margin: 20px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
 }
 
 .sidebar .sidebar, .sidebar .closebtn {
