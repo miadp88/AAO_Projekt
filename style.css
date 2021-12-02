@@ -26,9 +26,20 @@ main {
   margin: 20px;
 }
 
-.sidebar button {
-  background: none;
-  border: none;
+.sidebar .btn {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 18px 0 18px 25px;
+  font-size: 12px;
+  outline: 0;
+  width: 100% !important;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.sidebar .btn:hover {
+  color: #1abc9c !important;
 }
 
 .sidebar .sidebar, .sidebar .closebtn {
@@ -48,7 +59,6 @@ main {
 
 .sidebar #leftside-navigation ul li {
   list-style-type: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .sidebar #leftside-navigation ul li.active > a {
@@ -86,11 +96,11 @@ main {
   padding-top: 3px;
 }
 
-.sidebar #leftside-navigation ul ul {
+ul ul {
   display: none;
 }
 
-.sidebar #leftside-navigation ul ul li {
+ul ul li {
   background: #23313f;
   margin-bottom: 0;
   margin-left: 0;
@@ -98,7 +108,7 @@ main {
   border-bottom: none;
 }
 
-.sidebar #leftside-navigation ul ul li a {
+ul ul li a {
   font-size: 12px;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -167,6 +177,11 @@ header li .fa-user {
 
 #mainContent {
   margin-left: 260px;
+}
+
+#mainContent .HeadlinePage {
+  margin-left: 10px;
+  font-weight: bold;
 }
 
 .table-container {
@@ -282,6 +297,7 @@ header li .fa-user {
   background-color: #ddd;
 }
 
+/*Pagination under table*/
 .btnTrips {
   width: 100%;
   text-align: end;

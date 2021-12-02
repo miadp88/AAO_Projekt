@@ -32,3 +32,8 @@ $(this).toggleClass("down");
 $(document).ready(function () {
 $('[data-toggle="tooltip"]').tooltip();
 });
+
+
+
+
+// basic paging logic to demo the buttons

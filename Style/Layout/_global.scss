@@ -23,10 +23,30 @@ main{
            
             
         }
-        button{
-          background:none;
-          border:none;
+        .btn{
+          color: #000000;
+          text-decoration: none;
+          display: block;
+          padding: 18px 0 18px 25px;
+          font-size: 12px;
+          outline: 0;
+          width: 100%!important;
+          -webkit-transition: all 200ms ease-in;
+          -moz-transition: all 200ms ease-in;
+          -o-transition: all 200ms ease-in;
+          -ms-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+          &:hover {
+            color: #1abc9c!important;
+            
+          }
+         
+          
+
+          
         }
+
+
         .sidebar, .closebtn {
             position: absolute;
             top: 0;
@@ -36,6 +56,7 @@ main{
             text-decoration: none;
             color: black;
           }
+
 
          
     
@@ -57,17 +78,19 @@ main{
       
     }
     ul {
-      li {
+      li{
         list-style-type: none;
-        border-bottom: 1px solid rgba(255,255,255,.05);
+        
         &.active {
           & > a {
             color: #1abc9c;
+            
           }
           ul {
             display: block;
           }
         }
+        
         a {
           color: #000000;
           text-decoration: none;
@@ -93,6 +116,11 @@ main{
               padding-top: 3px;
             }
           }
+
+        }
+         
+          }
+     
         }
       }
     }
@@ -114,8 +142,8 @@ main{
         }
       }
     }
-  }
-}
+  
+
 
 
 
@@ -178,4 +206,11 @@ header{
 
 #mainContent{
   margin-left: 260px;
+  .HeadlinePage{
+    margin-left: 10px;
+    font-weight: bold;
+  }
 }
+
+
+
