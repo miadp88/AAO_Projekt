@@ -189,6 +189,24 @@ header li .fa-user {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   padding: 2.5%;
+  padding-bottom: 60px;
+}
+
+.table-container .triggers button {
+  background-color: #075243;
+  color: white;
+  padding: 3.5px 10px 3.5px 10px;
+}
+
+.table-container .triggers button .i .fa-angle-right {
+  line-height: 50px;
+}
+
+.table-container .triggers .pagination {
+  border: #075243 1px solid;
+  padding: 2px 10px 4.5px 10px;
+  height: 100;
+  font-size: 14px;
 }
 
 .table-container table {
