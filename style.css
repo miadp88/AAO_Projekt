@@ -22,8 +22,8 @@ main {
 }
 
 .sidebar .logo {
-  width: 80%;
-  margin: 20px;
+  width: 50%;
+  margin: 50px 0 20px 50px;
 }
 
 .sidebar .btn {
@@ -315,7 +315,6 @@ header li .fa-user {
   background-color: #ddd;
 }
 
-/*Pagination under table*/
 .btnTrips {
   width: 100%;
   text-align: end;
