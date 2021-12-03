@@ -10,24 +10,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
     padding: 2.5%;
-    padding-bottom: 60px;
-    .triggers{
-        button{
-            background-color: #075243;
-            color: white;
-            padding: 3.5px 10px 3.5px 10px;
-            .i .fa-angle-right{
-                line-height: 50px;
-            }
-        }
-        .pagination{
-            border:  #075243 1px solid;
-            padding: 2px 10px 4.5px 10px;
-            height: 100;
-            font-size: 14px;
-        }
+    padding-bottom: 10px;
     
-    }
     table {
         border-collapse: collapse;
         width: 100%;
@@ -153,6 +137,22 @@
 }
 
 
+.triggers{
+    button{
+        background-color: #075243;
+        color: white;
+        padding: 3.5px 10px 3.5px 10px;
+        .i .fa-angle-right{
+            line-height: 50px;
+        }
+    }
+    .pagination{
+        border:  #075243 1px solid;
+        padding: 2px 10px 4.5px 10px;
+        height: 100;
+        font-size: 14px;
+    }
 
+}
 
 
