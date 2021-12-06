@@ -315,11 +315,6 @@ header li .fa-user {
   font-size: 14px;
 }
 
-.btnTrips {
-  width: 100%;
-  text-align: end;
-}
-
 .btnTrips a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
