@@ -14,7 +14,9 @@
         border-radius: 5px;
 
     }
+    
 }  
+
 
 /*button from loginpage*/
 
@@ -50,9 +52,7 @@
             letter-spacing: 0.05rem;
             padding: 8px 20px 8px 20px;
             color: #158a49;
-            &hover{
-              background-color: none!important;
-            }
+          
             &:hover{
               background-color: white;
               border: white;
@@ -78,4 +78,39 @@
         
       }
     }
+  }
+
+  .dropdown-btn{
+    width: 100%;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0 18px 25px;
+    font-size: 12px;
+    outline: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    border: none;
+    background-color: white;
+    text-align: left;
+    &:hover {
+      color: #1abc9c;
+    
+    }
+    .fa-list-alt{
+      margin-right: 10px;
+    }
+    .fa-angle-down{
+      float: right;
+      margin-right: 15px;
+    }
+    
+  }
+
+  .w3-button{
+    text-align: left!important;
+    margin-left: 15px;
   }

@@ -369,10 +369,6 @@ header li .fa-user {
   color: #158a49;
 }
 
-.centeringPagiDiv .pagiContainer .pagination li buttonhover {
-  background-color: none !important;
-}
-
 .centeringPagiDiv .pagiContainer .pagination li button:hover {
   background-color: white;
   border: white;
@@ -391,6 +387,39 @@ header li .fa-user {
   color: white;
   border: none;
   opacity: 1;
+}
+
+.dropdown-btn {
+  width: 100%;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 18px 0 18px 25px;
+  font-size: 12px;
+  outline: 0;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  border: none;
+  background-color: white;
+  text-align: left;
+}
+
+.dropdown-btn:hover {
+  color: #1abc9c;
+}
+
+.dropdown-btn .fa-list-alt {
+  margin-right: 10px;
+}
+
+.dropdown-btn .fa-angle-down {
+  float: right;
+  margin-right: 15px;
+}
+
+.w3-button {
+  text-align: left !important;
+  margin-left: 15px;
 }
 
 /*loginform*/
