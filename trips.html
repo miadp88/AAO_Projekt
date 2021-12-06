@@ -88,7 +88,26 @@
        
           
             <div class="filter">
-                
+                <div class="w3-dropdown-click">
+                    <div>
+                        <h4>Start Lokation</h4>
+                        <button onclick="myFunction()" class="w3-button">Alle<i class="arrow fa fa-angle-down pull-right"></i> </button>
+                        <div id="Demo1" class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Afdeling</h4>
+                        <button onclick="myFunction()" class="w3-button">Cool<i class="arrow fa fa-angle-down pull-right"></i> </button>
+                        <div id="Demo2" class="w3-dropdown-content w3-bar-block ">
+                        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                        
+                    </div>
                     <div>
                         <form asp-action="Index" method="get">
                             <input type="hidden" name="sortDirection" value="@ViewData["sortDirection"]" />
@@ -106,6 +125,11 @@
                                     <div>
                                         <input type="submit" name="actionButton" value="Filter" class=" btn btn-outline-primary" />
                                         <a asp-action="Index">Clear filters</a>
+                                        <div class="dropdown-content">
+                                            <a href="#">Odense</a>
+                                            <a href="#">National</a>
+                                            <a href="#">International</a>
+                                        </div>
                                     </div>
                                     
                                 </div>
@@ -114,35 +138,7 @@
                           
                       </div>
                   </div>
-                  <div class="w3-dropdown-click">
-                    <div>
-                        <h4>Start Lokation</h4>
-                        <button onclick="myFunction()" class="w3-button">Alle<i class="arrow fa fa-angle-down pull-right"></i> </button>
-                        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                        </div>
-                        <div class="dropdown-content">
-                            <a href="#">Odense</a>
-                            <a href="#">National</a>
-                            <a href="#">International</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Afdeling</h4>
-                        <button onclick="myFunction()" class="w3-button">Cool<i class="arrow fa fa-angle-down pull-right"></i> </button>
-                        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-                        </div>
-                        <div class="dropdown-content">
-                            <a href="#">Odense</a>
-                            <a href="#">National</a>
-                            <a href="#">International</a>
-                        </div>
-                    </div>
+                 
 
             </div>
           

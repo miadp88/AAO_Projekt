@@ -107,7 +107,8 @@
       float: left;
       margin-top: 32px;
       &:hover{
-        background-color: white!important;
+        background-color: rgba(255, 255, 255, 0)!important;
+        color: #1abc9c!important;
       }
       .w3-button{
         -webkit-appearance: button;
@@ -115,22 +116,33 @@
         appearance: button;
         text-decoration: none;
         color: black;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         padding: 8px 20px 8px 20px;
         border-radius: 5px;
         text-align: left;
         box-shadow: none;
         border: solid 1px rgba(0, 0, 0, 0.233);
-        margin-bottom: 20px;
-        margin-left: 30px;
         width: 300px;
+        margin-bottom: 20px;
+        padding: none!important;
         &:hover{
           background-color: white!important;
+
         }
+        
     } 
     h4{
       font-size: 1.2rem;
-      margin-left: 30px;
     } 
+    .w3-dropdown-content{
+      margin-left: 15px!important;
+      margin-top: -21px!important;
+      border: solid 1px rgba(0, 0, 0, 0.233)!important;
+      width: 300px;
+   
+      
+ 
+
+    }
   }
   

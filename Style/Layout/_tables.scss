@@ -15,11 +15,13 @@
     table {
         border-collapse: collapse;
         width: 100%;
+        
         tr {
             border-bottom: 1px solid #808080;
             th {
                 text-align: center;
             }
+            
             td {
                 text-align: center;
             }
@@ -55,6 +57,7 @@
             display: none;
             background-color: #A7D8C0;
             border-color: white;
+            
         
             tr {
                 border-bottom: 1px solid white;
@@ -72,6 +75,8 @@
                         justify-items: center;
                     }
                 }
+
+                
             }
         }
     }
