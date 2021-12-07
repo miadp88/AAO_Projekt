@@ -255,12 +255,39 @@ header li .fa-user {
   justify-items: center;
 }
 
-.table-container table .rowdetail tr .trebtn {
-  width: 100px;
+.table-container table .rowdetail tr .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.table-container table .rowdetail tr .info {
+.table-container table .rowdetail tr .info div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: middle;
+  margin: 5px 20px;
+}
+
+.table-container table .rowdetail tr .info .infoText {
   width: 60%;
+}
+
+.table-container table .rowdetail tr .info .TreBtn {
+  margin: auto;
+  color: white;
+  background-color: lightgrey;
+}
+
+.table-container table .rowdetail tr .info .TreBtn .btnGreen {
+  background-color: #00904a;
+  color: white;
+}
+
+.table-container table .rowdetail tr .info .TreBtn .btnRed {
+  background-color: red;
+  color: white;
 }
 
 .button-green {
@@ -426,6 +453,19 @@ header li .fa-user {
 .w3-dropdown-click:hover {
   background-color: rgba(255, 255, 255, 0) !important;
   color: #1abc9c !important;
+}
+
+.w3-dropdown-click .HeadlineDropdown {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100%;
+  float: left;
+  margin-top: 32px;
+}
+
+.w3-dropdown-click .HeadlineDropdown:hover {
+  color: #1abc9c00 !important;
 }
 
 .w3-dropdown-click .w3-button {

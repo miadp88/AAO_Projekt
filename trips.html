@@ -123,12 +123,10 @@
                                         <!--@Html.DropDownList("DepartmentID", null, "Alle", htmlAttributes: new { @class = "form-control" })-->
                                     </div>
                                     <div>
-                                        <input type="submit" name="actionButton" value="Filter" class=" btn btn-outline-primary" />
+                                        <input type="submit" name="actionButton" value="Filter" class=" btn " />
                                         <a asp-action="Index">Clear filters</a>
                                         <div class="dropdown-content">
-                                            <a href="#">Odense</a>
-                                            <a href="#">National</a>
-                                            <a href="#">International</a>
+                                
                                         </div>
                                     </div>
                                     
@@ -185,27 +183,31 @@
                                   <tbody>
                                     <tr rowspan="3">
                                           <td class="info">
-                                              <h2>INFO OM TUR</h2>
-                                              <p>Bacon ipsum dolor amet chicken beef short loin 
-                                                  hamburger shank turducken shankle. Pork pork 
-                                                  chop leberkas, bacon beef ribs alcatra chuck 
-                                                  tri-tip tail pork belly. Salami pancetta boudin 
-                                                  porchetta tail shankle ham hock turducken short 
-                                                  loin corned beef spare ribs cow sirloin doner. 
-                                                  Spare ribs strip steak tail chuck, pastrami 
-                                                  porchetta ball tip andouille landjaeger.</p>
+                                            <div class="infoText">
+                                                <h2>INFO OM TUR</h2>
+                                                <p>Bacon ipsum dolor amet chicken beef short loin 
+                                                    hamburger shank turducken shankle. Pork pork 
+                                                    chop leberkas, bacon beef ribs alcatra chuck 
+                                                    tri-tip tail pork belly. Salami pancetta boudin 
+                                                    porchetta tail shankle ham hock turducken short 
+                                                    loin corned beef spare ribs cow sirloin doner. 
+                                                    Spare ribs strip steak tail chuck, pastrami 
+                                                    porchetta ball tip andouille landjaeger.</p>
+                                                </div>
+
+                                                  <div class="TreBtn d-flex">
+                                                    <div class="button-green-container">
+                                                        <div id="submit-drivers-to-trip" class="btn btnGreen"> Godkend ændringer</div>
+                                                    </div>
+                                                    <div class="button-green-container">
+                                                        <div id="submit-drivers-to-trip" class="btn btnRed"> Godkend ændringer</div>
+                                                    </div>
+                                                      <div class="button-green-container">
+                                                          <div id="submit-drivers-to-trip" class="btn btnRed"> Godkend ændringer</div>
+                                                      </div>
+                                                    </div>
                                           </td>
-                                          <td class="TreBtn">
-                                            <div class="button-green-container">
-                                                <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
-                                            </div>
-                                            <div class="button-green-container">
-                                                <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
-                                            </div>
-                                              <div class="button-green-container">
-                                                  <div id="submit-drivers-to-trip" class="button-green"> Godkend ændringer</div>
-                                              </div>
-                                          </td>
+                                          
           
                                       </tr>
                                   </tbody>

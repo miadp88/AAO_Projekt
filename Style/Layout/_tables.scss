@@ -81,11 +81,32 @@
                    
                 }
 
-                .trebtn{
-                    width: 100px;
-                }
                 .info{
-                    width: 60%;
+                    display: flex;
+                    div{
+                        flex-direction: column;
+                        vertical-align: middle;
+                        margin: 5px 20px ;
+
+                    }
+                    .infoText{
+                        width: 60%;
+                    }
+
+                    .TreBtn{
+                        margin: auto;
+                        color: white;
+                        background-color: lightgrey;
+                        .btnGreen{
+                            background-color:$LigthGreen;
+                            color: white;
+                        }
+                        .btnRed{
+                            background-color: red;
+                            color: white;
+                        }
+                    }
+
                 }
                 
             }
