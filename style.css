@@ -233,7 +233,7 @@ header li .fa-user {
 
 .table-container table .rowdetail {
   display: none;
-  background-color: #A7D8C0;
+  background-color: rgba(211, 211, 211, 0.24);
   border-color: white;
 }
 
@@ -277,7 +277,6 @@ header li .fa-user {
 .table-container table .rowdetail tr .info .TreBtn {
   margin: auto;
   color: white;
-  background-color: lightgrey;
 }
 
 .table-container table .rowdetail tr .info .TreBtn .btnGreen {
@@ -453,19 +452,6 @@ header li .fa-user {
 .w3-dropdown-click:hover {
   background-color: rgba(255, 255, 255, 0) !important;
   color: #1abc9c !important;
-}
-
-.w3-dropdown-click .HeadlineDropdown {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  width: 100%;
-  float: left;
-  margin-top: 32px;
-}
-
-.w3-dropdown-click .HeadlineDropdown:hover {
-  color: #1abc9c00 !important;
 }
 
 .w3-dropdown-click .w3-button {
