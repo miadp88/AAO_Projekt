@@ -61,6 +61,7 @@
         
             tr {
                 border-bottom: 1px solid white;
+              
 
                 td{
                     
@@ -69,13 +70,23 @@
                         color: white;
                     }
 
+                   
+
                     .button-green-container {
                         display: inline-grid;
                         align-items: center;
                         justify-items: center;
                     }
+
+                   
                 }
 
+                .trebtn{
+                    width: 100px;
+                }
+                .info{
+                    width: 60%;
+                }
                 
             }
         }

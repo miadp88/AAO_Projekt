@@ -255,6 +255,14 @@ header li .fa-user {
   justify-items: center;
 }
 
+.table-container table .rowdetail tr .trebtn {
+  width: 100px;
+}
+
+.table-container table .rowdetail tr .info {
+  width: 60%;
+}
+
 .button-green {
   border: none;
   border-radius: 5px;
